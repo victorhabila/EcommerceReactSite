@@ -11,8 +11,8 @@ import {
 } from "../features/cartSlice";
 
 const Cart = () => {
-  const cart = useSelector((state) => state.cart);
-  const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart); // using useSelector to access my state in this case cart
+  const dispatch = useDispatch(); // using dispatcher to access and use my actions
 
   //renders our dispatcher when the cart state changes
   useEffect(() => {

@@ -16,7 +16,7 @@ const cartSlice = createSlice({
     addToCart(state, action) {
       //first check whether the product you are adding to cart already existing using findIndex array method
       const itemIndex = state.cartItems.findIndex(
-        (item) => item.id === action.payload.id
+        (item) => item.id === action.payload.id //payload is simply the data(form data or any data your are returning or parsing after performing an action)
       );
 
       if (itemIndex >= 0) {
